@@ -1,0 +1,74 @@
+
+Git User Information :
+git config --global user.name "Tejas Pandule"
+git config --global user.email "tejaspandule9036@gmail.com"
+
+
+Integrate the Git in Repo & adding the files in Staging :
+git init
+git add .
+git add <filename>
+
+
+Restore the Files or Unstaging files :
+git restore --staged <filename>
+git restore .
+
+
+Global Ignore Files:
+git config --global core.excludefile <file>
+Note : Adding the files or folders in .gitignore file which you have to ignore.
+
+
+Clearing the Caches :
+git rm -r --cached
+
+
+Delete files And Restoring using Git :
+git rm <filename>       (file is Delete and added into staging )
+
+git restore -S .  or git restore -S <filename>         (file is out from staging)
+git restore .     or git Restore <filename>            (file is restored and untracked)
+Note: files must be commited.
+
+
+Renaming the files :
+git mv <current file name> <new file name>
+
+
+Difference between files :
+git diff
+
+
+Showing all Commits :
+git log       (Descriptive)
+git log --oneline  (Single Line)
+
+
+Update the files without making new commits or (same commit):
+git commit --amend
+
+
+Changing the Arragement of commits/ changing history of commits :
+git rebase -i --root
+
+
+Finding , Changing , Merging And Delete Branch :
+git branch
+git switch -c <branch name> / git checkout <branch name>
+git merge <branch name>    (current Branch should be master/main)
+git branch -d <branch name> / git branch --delete <branch name>
+
+Making temporary changes into files and reverse back in original state :
+git stash
+git stash list
+git stash apply
+git stash pop
+
+Deleting Untracked Files & Directries :
+git clean -n         ..file
+git clean -d         ..
+git clean -f
+
+
+
