@@ -69,7 +69,6 @@ git stash pop
 Deleting Untracked Files & Directries :
 git clean -n         ..file
 git clean -d         ..
-git clean -f
 
 
 
